@@ -1,0 +1,20 @@
+.phone {
+  flex: 0 0 auto;
+  font-size: 13px;
+  line-height: normal;
+  &__link {
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    cursor: default;
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    fill: $color-blue;
+    width: 12px;
+    height: 11px;
+  }
+}

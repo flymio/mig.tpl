@@ -1,0 +1,140 @@
+@include font-face('Gotham Pro', '../fonts/gotham-pro-regular', $regular, normal);
+@include font-face('Gotham Pro', '../fonts/gotham-pro-medium', $medium, normal);
+@include font-face('Gotham Pro', '../fonts/gotham-pro-bold', $bold, normal);
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font: $regular 18px / 23px $font;
+  color: $color-black;
+  background: $color-white;
+}
+a {
+  color: $color-blue;
+  outline: none;
+  @include transition;
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+p {
+  margin: 0 0 30px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+strong,
+b {
+  font-weight: $bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $font;
+  font-weight: $medium;
+  line-height: normal;
+  color: $color-blue;
+  margin: 0 0 30px;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 32px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 23px;
+}
+h5,
+.h5 {
+  font-size: 22px;
+}
+h6,
+.h6 {
+  font-size: 18px;
+}
+ul,
+ol {
+  margin: 0 0 30px;
+}
+q {
+  display: block;
+  margin: 0 0 30px;
+}
+svg {
+  display: block;
+  overflow: hidden;
+}
+input,
+textarea {
+  &::-webkit-input-placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+  }
+}
+input::-ms-clear {
+  display: none;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.cover {
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  @media screen and (min-width: 990px) {
+    max-width: 970px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+.slick-slider {
+  display: block!important;
+}
+.slick-slide {
+  outline: none;
+  & > div {
+    outline: none;
+  }
+}

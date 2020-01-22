@@ -1,0 +1,28 @@
+.call {
+  flex: 0 0 auto;
+  font-size: 13px;
+  line-height: normal;
+  &__link {
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    &:hover,
+    &:active {
+      color: $color-light;
+    }
+  }
+  &__icon {
+    width: 10px;
+    height: 9px;
+    fill: $color-blue;
+    @include transition;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+  &__link:hover &__icon,
+  &__link:active &__icon {
+    fill: $color-light;
+  }
+}

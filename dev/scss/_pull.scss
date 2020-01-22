@@ -1,0 +1,32 @@
+.pull {
+  flex: 0 0 auto;
+  width: 23px;
+  height: 14px;
+  position: relative;
+  cursor: pointer;
+  div {
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: $color-blue;
+    position: absolute;
+    left: 0;
+    @include transition;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 6px;
+      width: 18px;
+    }
+    &:nth-child(3) {
+      top: 12px;
+    }
+  }
+  &:hover,
+  &:active {
+    div {
+      background: $color-light;
+    }
+  }
+}
