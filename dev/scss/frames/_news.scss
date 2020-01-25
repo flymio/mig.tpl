@@ -1,0 +1,75 @@
+.news {
+  padding-top: 40px;
+  padding-bottom: 75px;
+  &__heading {
+    display: flex;
+    position: relative;
+    margin: 0 -40px 73px 0;
+  }
+  &__section-name {
+    flex: 1 1 auto;
+    padding-right: 40px;
+  }
+  &__button-block {
+    flex: 0 0 auto;
+    padding-right: 40px;
+    position: relative;
+    margin-top: -1px;
+  }
+  &__left-bar {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+  }
+  &__right-bar {
+    float: left;
+    width: 50%;
+  }
+  &__text-content {
+    width: 470px;
+    float: right;
+    @media screen and (min-width: 1200px) {
+      width: 555px;
+    }
+  }
+  &__text {
+    width: 405px;
+  }
+  &__carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin-left: -15px;
+    @media screen and (min-width: 1200px) {
+      margin-left: -60px;
+    }
+  }
+  &__arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slick-arrow {
+      display: block;
+      width: 10px;
+      height: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-size: 0;
+      padding: 0;
+      margin-top: 35px;
+      svg {
+        width: 10px;
+        height: 15px;
+        fill: $color-blue;
+      }
+    }
+    .slick-prev {
+      transform: scale(-1, 1);
+      margin-right: 35px;
+    }
+    .slick-next {
+      margin-left: 35px;
+    }
+  }
+}

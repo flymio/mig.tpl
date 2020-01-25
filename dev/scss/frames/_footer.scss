@@ -1,0 +1,135 @@
+.footer {
+  background: linear-gradient(180deg, #091C47 0%, #40537D 100%);
+  backdrop-filter: blur(34px);
+  &__cover {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    position: relative;
+    margin-right: -70px;
+    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      margin-right: -85px;
+    }
+  }
+  &__logo {
+    flex: 0 0 auto;
+    margin-right: 70px;
+    margin-bottom: 25px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 85px;
+    }
+  }
+  &__logo-link {
+    width: 96px;
+    height: 96px;
+    background: $color-white;
+    position: relative;
+  }
+  &__logo-icon {
+    width: 82px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -41px;
+    margin-top: -36px;
+  }
+  &__contacts {
+    flex: 0 0 auto;
+    padding-right: 70px;
+    @media screen and (min-width: 1200px) {
+      padding-right: 85px;
+    }
+  }
+  &__phone {
+    font-weight: $medium;
+    font-size: 18px;
+    line-height: normal;
+    margin: 0 0 25px;
+  }
+  &__phone-link {
+    color: $color-white;
+    cursor: default;
+    text-decoration: none;
+  }
+  &__mail {
+    font-weight: $medium;
+    font-size: 18px;
+    line-height: normal;
+    margin: 0 0 25px;
+  }
+  &__mail-link {
+    color: $color-white;
+    cursor: default;
+    text-decoration: none;
+  }
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px 0 0;
+    list-style: none;
+    padding: 0 0 15px;
+    align-items: center;
+  }
+  &__social-item {
+    flex: 0 0 auto;
+    padding: 0 25px 10px 0;
+  }
+  &__social-icon {
+    fill: $color-white;
+    @include transition;
+  }
+  &__social-link:hover &__social-icon,
+  &__social-link:active &__social-icon {
+    fill: $color-light;
+  }
+  &__navs {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  &__nav-bar {
+    flex: 0 0 auto;
+    padding-right: 70px;
+    margin-bottom: 25px;
+    @media screen and (min-width: 1200px) {
+      padding-right: 85px;
+    }
+    &_one {
+      width: 38%;
+      @media screen and (min-width: 1200px) {
+        width: 35%;
+      }
+    }
+    &_two {
+      width: 62%;
+      @media screen and (min-width: 1200px) {
+        width: 65%;
+      }
+    }
+  }
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__nav-item {
+    margin-top: 11px;
+    font-size: 18px;
+    line-height: normal;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__nav-link {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: none;
+    &:hover,
+    &:active {
+      color: $color-light;
+    }
+  }
+}

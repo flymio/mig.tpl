@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  min-width: 220px;
+  padding: 10px;
+  text-decoration: none;
+  outline: none;
+  font: $bold 18px $font;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $color-blue;
+  background: none;
+  @include transition;
+  &:hover,
+  &:active {
+    color: $color-white;
+    background: $color-blue;
+  }
+  &_fill {
+    color: $color-white;
+    background: $color-blue;
+    &:hover,
+    &:active {
+      background: none;
+      color: $color-blue;
+    }
+  }
+}

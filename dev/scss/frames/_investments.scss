@@ -1,0 +1,48 @@
+.investments {
+  &__cover {
+    padding-top: 22px;
+    padding-bottom: 80px;
+  }
+  &__heading {
+    margin-bottom: 17px;
+  }
+  &__content {
+    display: flex;
+    width: 100%;
+  }
+  &__text {
+    flex: 1 1 auto;
+    padding-left: 50px;
+  }
+  &__description {
+    font-size: 24px;
+    line-height: 31px;
+    color: #31393D;
+    margin: 0;
+    max-width: 245px;
+  }
+  &__button {
+    margin: 58px 0 0;
+  }
+  &__img-block {
+    position: relative;
+    flex: 0 0 auto;
+    width: 524px;
+    margin-top: -45px;
+    margin-left: 40px;
+  }
+  &__img {
+    max-width: 524px;
+  }
+  &__sub-description {
+    display: block;
+    position: absolute;
+    left: -34px;
+    top: 7px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #132250;
+    z-index: 2;
+    width: 275px;
+  }
+}
