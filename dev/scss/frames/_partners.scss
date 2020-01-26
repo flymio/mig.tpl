@@ -1,13 +1,20 @@
 .partners {
   &__cover {
-    padding-top: 66px;
-    padding-bottom: 25px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 990px) {
+      padding-top: 66px;
+      padding-bottom: 25px;
+    }
     @media screen and (min-width: 1200px) {
       padding-bottom: 50px;
     }
   }
   &__heading {
-    margin: 0 0 58px;
+    margin: 0 0 37px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 58px;
+    }
   }
   &__list {
     display: flex;
@@ -15,13 +22,19 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 -40px;
+    margin: 0 -30px;
+    @media screen and (min-width: 990px) {
+      margin: 0 -40px;
+    }
     @media screen and (min-width: 1200px) {
       margin: 0 -50px;
     }
   }
   &__item {
-    padding: 0 40px 60px;
+    padding: 0 30px 30px;
+    @media screen and (min-width: 990px) {
+      padding: 0 40px 60px;
+    }
     @media screen and (min-width: 1200px) {
       padding-left: 50px;
       padding-right: 50px;

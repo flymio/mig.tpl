@@ -6,10 +6,16 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-right: -40px;
+    margin-right: -25px;
+    @media screen and (min-width: 480px) {
+      margin-right: -40px;
+    }
   }
   &__logo {
-    margin-right: 40px;
+    margin-right: 25px;
+    @media screen and (min-width: 480px) {
+      margin-right: 40px;
+    }
   }
   &__logo-icon {
     max-width: none;
@@ -17,7 +23,14 @@
     height: 42px;
   }
   &__nav {
-    margin-right: 40px;
+    margin-right: 25px;
+    display: none;
+    @media screen and (min-width: 480px) {
+      margin-right: 40px;
+    }
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
   &__contacts {
     flex: 0 0 auto;
@@ -25,13 +38,24 @@
     align-items: center;
   }
   &__call {
-    margin-right: 40px;
+    margin-right: 25px;
+    @media screen and (min-width: 480px) {
+      margin-right: 40px;
+    }
   }
   &__phone {
-    margin-right: 40px;
+    margin-right: 25px;
+    display: none;
+    @media screen and (min-width: 480px) {
+      margin-right: 40px;
+      display: block;
+    }
   }
   &__pull {
-    margin-right: 40px;
+    margin-right: 25px;
+    @media screen and (min-width: 480px) {
+      margin-right: 40px;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 80px;
     }

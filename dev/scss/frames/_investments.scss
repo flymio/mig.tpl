@@ -1,41 +1,77 @@
 .investments {
   &__cover {
     padding-top: 22px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 80px;
+    }
   }
   &__heading {
-    margin-bottom: 17px;
+    margin-bottom: 37px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 17px;
+    }
   }
   &__content {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    @media screen and (min-width: 990px) {
+      flex-wrap: nowrap;
+    }
   }
   &__text {
     flex: 1 1 auto;
-    padding-left: 50px;
+    order: 2;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      order: 1;
+      padding-left: 50px;
+      text-align: left;
+    }
   }
   &__description {
-    font-size: 24px;
-    line-height: 31px;
     color: #31393D;
     margin: 0;
-    max-width: 245px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+    @media screen and (min-width: 990px) {
+      max-width: 245px;
+      text-align: left;
+    }
   }
   &__button {
-    margin: 58px 0 0;
+    margin: 40px 0 0;
+    @media screen and (min-width: 990px) {
+      margin-top: 58px;
+    }
   }
   &__img-block {
     position: relative;
     flex: 0 0 auto;
-    width: 524px;
-    margin-top: -45px;
-    margin-left: 40px;
+    width: 100%;
+    order: 1;
+    margin-bottom: 35px;
+    @media screen and (min-width: 990px) {
+      order: 2;
+      margin-top: -45px;
+      margin-left: 40px;
+      width: 524px;
+      margin-bottom: 0;
+    }
   }
   &__img {
-    max-width: 524px;
+    margin: 0 auto;
+    @media screen and (min-width: 990px) {
+      margin: 0;
+      max-width: 524px;
+    }
   }
   &__sub-description {
-    display: block;
+    display: none;
     position: absolute;
     left: -34px;
     top: 7px;
@@ -44,5 +80,8 @@
     color: #132250;
     z-index: 2;
     width: 275px;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
 }

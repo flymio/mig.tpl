@@ -1,29 +1,63 @@
 .news {
-  padding-top: 40px;
-  padding-bottom: 75px;
+  padding-top: 60px;
+  padding-bottom: 162px;
+  position: relative;
+  @media screen and (min-width: 990px) {
+    padding-bottom: 75px;
+    padding-top: 40px;
+  }
+  &__cover {
+    position: static;
+    @media screen and (min-width: 990px) {
+      position: relative;
+    }
+  }
   &__heading {
     display: flex;
-    position: relative;
-    margin: 0 -40px 73px 0;
+    margin: 0 0 35px 0;
+    @media screen and (min-width: 990px) {
+      margin-right: -40px;
+      position: relative;
+      margin-bottom: 73px;
+    }
   }
   &__section-name {
     flex: 1 1 auto;
-    padding-right: 40px;
+    @media screen and (min-width: 990px) {
+      padding-right: 40px;
+    }
   }
   &__button-block {
     flex: 0 0 auto;
-    padding-right: 40px;
-    position: relative;
-    margin-top: -1px;
+    position: absolute;
+    left: 0;
+    bottom: 67px;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    @media screen and (min-width: 990px) {
+      position: relative;
+      margin-top: -1px;
+      width: auto;
+      bottom: 0;
+      padding: 0 40px 0 0;
+      text-align: left;
+    }
   }
   &__left-bar {
     float: left;
     width: 50%;
     overflow: hidden;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
   &__right-bar {
-    float: left;
-    width: 50%;
+    @media screen and (min-width: 990px) {
+      float: left;
+      width: 50%;
+    }
   }
   &__text-content {
     width: 470px;
@@ -38,7 +72,9 @@
   &__carousel-wrapper {
     overflow: hidden;
     position: relative;
-    margin-left: -15px;
+    @media screen and (min-width: 990px) {
+      margin-left: -15px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: -60px;
     }

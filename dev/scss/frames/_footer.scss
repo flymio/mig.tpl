@@ -2,15 +2,21 @@
   background: linear-gradient(180deg, #091C47 0%, #40537D 100%);
   backdrop-filter: blur(34px);
   &__cover {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    @media screen and (min-width: 990px) {
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
   }
   &__content {
     position: relative;
     display: flex;
     position: relative;
-    margin-right: -70px;
     justify-content: space-between;
+    @media screen and (min-width: 990px) {
+      margin-right: -70px;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: -85px;
     }
@@ -19,6 +25,10 @@
     flex: 0 0 auto;
     margin-right: 70px;
     margin-bottom: 25px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
     @media screen and (min-width: 1200px) {
       margin-right: 85px;
     }
@@ -40,7 +50,13 @@
   }
   &__contacts {
     flex: 0 0 auto;
-    padding-right: 70px;
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      padding-right: 70px;
+      width: auto;
+      text-align: left;
+    }
     @media screen and (min-width: 1200px) {
       padding-right: 85px;
     }
@@ -49,7 +65,10 @@
     font-weight: $medium;
     font-size: 18px;
     line-height: normal;
-    margin: 0 0 25px;
+    margin: 0 0 15px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 25px;
+    }
   }
   &__phone-link {
     color: $color-white;
@@ -60,7 +79,10 @@
     font-weight: $medium;
     font-size: 18px;
     line-height: normal;
-    margin: 0 0 25px;
+    margin: 0 0 15px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 25px;
+    }
   }
   &__mail-link {
     color: $color-white;
@@ -70,14 +92,24 @@
   &__social {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -25px 0 0;
+    margin: 0 -7.5px;
     list-style: none;
-    padding: 0 0 15px;
+    padding: 0;
     align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 990px) {
+      margin-right: -25px;
+      margin-left: 0;
+      padding: 0 0 15px;
+      justify-content: flex-start;
+    }
   }
   &__social-item {
     flex: 0 0 auto;
-    padding: 0 25px 10px 0;
+    padding: 0 7.5px 15px;
+    @media screen and (min-width: 990px) {
+      padding: 0 25px 10px 0;
+    }
   }
   &__social-icon {
     fill: $color-white;
@@ -88,8 +120,11 @@
     fill: $color-light;
   }
   &__navs {
-    display: flex;
+    display: none;
     flex: 1 1 auto;
+    @media screen and (min-width: 990px) {
+      display: flex;
+    }
   }
   &__nav-bar {
     flex: 0 0 auto;

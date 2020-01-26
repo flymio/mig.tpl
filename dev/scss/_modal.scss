@@ -1,0 +1,42 @@
+.modal {
+  display: none;
+  width: 100%;
+  background: #F8F8F8;
+  padding: 50px 15px 30px;
+  position: relative;
+  @media screen and (min-width: 480px) {
+    padding: 25px 30px 30px;
+  }
+  @media screen and (min-width: 600px) {
+    padding: 25px 65px 55px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 543px;
+  }
+  &__title {
+    text-align: center;
+    margin: 0 auto 30px;
+    font: $regular 24px / 25px $font;
+    color: #243138;
+    @media screen and (min-width: 480px) {
+      width: 260px;
+      margin-bottom: 50px;
+    }
+  }
+  &__close {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+    @media screen and (min-width: 480px) {
+      right: 30px;
+      top: 30px;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: $color-blue;
+    }
+  }
+}

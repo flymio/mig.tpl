@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  min-width: 220px;
+  width: 100%;
   padding: 10px;
   text-decoration: none;
   outline: none;
@@ -11,6 +11,10 @@
   border: 2px solid $color-blue;
   background: none;
   @include transition;
+  @media screen and (min-width: 480px) {
+    min-width: 220px;
+    width: auto;
+  }
   &:hover,
   &:active {
     color: $color-white;

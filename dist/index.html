@@ -16,9 +16,10 @@
     <link rel="apple-touch-icon" href="#">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,500,700&display=swap&subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css?t=1579966409942">
-    <link rel="stylesheet" href="css/slick.css?t=1579966409942">
-    <link rel="stylesheet" href="css/styles.css?t=1579966409942">
+    <link rel="stylesheet" href="css/normalize.css?t=1580066864735">
+    <link rel="stylesheet" href="css/slick.css?t=1580066864735">
+    <link rel="stylesheet" href="css/fancybox.css?t=1580066864735">
+    <link rel="stylesheet" href="css/styles.css?t=1580066864735">
   </head>
   <body>
     <!-- (wrapper) -->
@@ -53,7 +54,7 @@
               <div class="header__contacts">
                 <!-- (call) -->
                 <div class="call header__call">
-                  <a href="#" class="call__link">
+                  <a href="javascript:;" data-fancybox data-src="#call" class="call__link">
                     <svg class="call__icon">
                       <use xlink:href="images/icons-sprite.svg#icon-mail"></use>
                     </svg>
@@ -276,9 +277,7 @@
                     <div class="news-names__item">
                       <h4 class="news-names__item-name">
                         В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний
-                        <svg class="news-names__item-icon">
-                          <use xlink:href="images/icons-sprite.svg#icon-lightning"></use>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 20" class="news-names__item-icon"><path d="M7 0L0 11h7l-2 9 8.5-12H6L7 0z"/></svg>
                       </h4>
                     </div>
                     <div class="news-names__item">
@@ -318,31 +317,49 @@
                     <a href="#" class="news-carousel__item-link">
                       <div class="news-carousel__item-label">New</div>
                       <img src="images/content/img-new-1.jpg" alt="В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний
+                      </h4>
                     </a>
                   </div>
                   <div class="news-carousel__item">
                     <a href="#" class="news-carousel__item-link">
                       <img src="images/content/img-new-2.jpg" alt="Презентация нового центра «ПЭТ-Технолоджи» в Ярославле" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        Презентация нового центра «ПЭТ-Технолоджи» в Ярославле
+                      </h4>
                     </a>
                   </div>
                   <div class="news-carousel__item">
                     <a href="#" class="news-carousel__item-link">
                       <img src="images/content/img-new-1.jpg" alt="В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний
+                      </h4>
                     </a>
                   </div>
                   <div class="news-carousel__item">
                     <a href="#" class="news-carousel__item-link">
                       <img src="images/content/img-new-2.jpg" alt="Презентация нового центра «ПЭТ-Технолоджи» в Ярославле" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        Презентация нового центра «ПЭТ-Технолоджи» в Ярославле
+                      </h4>
                     </a>
                   </div>
                   <div class="news-carousel__item">
                     <a href="#" class="news-carousel__item-link">
                       <img src="images/content/img-new-1.jpg" alt="В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        В Туле построят центр ядерной медицины для диагностики и лечения онкозаболеваний
+                      </h4>
                     </a>
                   </div>
                   <div class="news-carousel__item">
                     <a href="#" class="news-carousel__item-link">
                       <img src="images/content/img-new-2.jpg" alt="Презентация нового центра «ПЭТ-Технолоджи» в Ярославле" class="news-carousel__item-img">
+                      <h4 class="news-carousel__item-name">
+                        Презентация нового центра «ПЭТ-Технолоджи» в Ярославле
+                      </h4>
                     </a>
                   </div>
                 </div>
@@ -507,9 +524,92 @@
       </div>
     </div>
     <!-- End (wrapper) -->
+    <!-- (main-nav) -->
+    <div class="main-nav-bg" id="main-nav-bg"></div>
+    <nav class="main-nav" id="main-nav">
+      <div class="main-nav__cover">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__close" id="main-nav-close">
+            <svg class="main-nav__icon-close">
+              <use xlink:href="images/icons-sprite.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">О компании</a>
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">- управление</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">- новости</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">- инвестиции</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">- проекты</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">- партнерство</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">География</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Нормотворчество</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Социальная ответственность</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Образовательные проекты</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End (main-nav) -->
+    <!-- (modal) -->
+    <div class="modal" id="call">
+      <h4 class="modal__title">Заполните анкету и мы с вами свяжемся</h4>
+      <div class="form">
+        <form action="#" name="form" method="POST">
+          <div class="form__fields">
+            <div class="form__field form__field_success">
+              <div class="form__label">Имя</div>
+              <div class="form__field-wrapper">
+                <input type="text" name="name" value="Дмитрий" placeholder="" class="form__input">
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="form__label">Email</div>
+              <div class="form__field-wrapper">
+                <input type="email" name="email" value="" placeholder="" class="form__input">
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="form__label">Телефон</div>
+              <div class="form__field-wrapper">
+                <input type="tel" name="phone" value="" placeholder="+7" class="form__input">
+              </div>
+            </div>
+          </div>
+          <input type="submit" name="submit" value="Отправить" class="form__submit">
+        </form>
+      </div>
+    </div>
+    <!-- End (modal) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/svg4everybody.js?t=1579966409942"></script>
-    <script src="js/slick.js?t=1579966409942"></script>
-    <script src="js/scripts.js?t=1579966409942"></script>
+    <script src="js/svg4everybody.js?t=1580066864735"></script>
+    <script src="js/slick.js?t=1580066864735"></script>
+    <script src="js/fancybox.js?t=1580066864735"></script>
+    <script src="js/maskedinput.js?t=1580066864735"></script>
+    <script src="js/scripts.js?t=1580066864735"></script>
   </body>
 </html>

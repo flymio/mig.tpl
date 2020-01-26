@@ -33,7 +33,7 @@ $(function () {
     swipe: false,
     responsive: [
       {
-        breakpoint: 990,
+        breakpoint: 600,
         settings: {
           
         }
@@ -52,7 +52,72 @@ $(function () {
         settings: {
           variableWidth: false
         }
+      },
+      {
+        breakpoint: 990,
+        settings: {
+          variableWidth: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          variableWidth: false,
+          centerMode: true,
+          centerPadding: '30px'
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          variableWidth: false,
+          centerMode: true,
+          centerPadding: '20px'
+        }
       }
     ]
   });
+
+  // Навигация
+  $('#pull').on('click', function() {
+    $('#main-nav').addClass('active');
+    $('#main-nav-bg').fadeIn(200);
+  });
+
+  $('#main-nav-bg, #main-nav-close').on('click', function() {
+    $('#main-nav').removeClass('active');
+    $('#main-nav-bg').fadeOut(200);
+  });
+
+  $('.main-nav__link').on('click', function(e) {
+    var parentContainer = $(this).parent('.main-nav__item');
+    var subNavList = parentContainer.find('.main-nav__list');
+
+    if (subNavList.length) {
+      e.preventDefault();
+      subNavList.stop(true, true).slideToggle(200);
+    }
+  });
+
+  // Модальное окно
+  $('[data-fancybox]').fancybox({
+    buttons: [],
+    hash: false,
+    arrows: false,
+    infobar: false,
+    hideScrollbar: true,
+    transitionEffect: 'slide',
+    animationEffect: 'fade',
+    closeExisting: true,
+    transitionDuration: 200,
+    autoFocus: false,
+    loop: false,
+    modal: true,
+    afterLoad: function afterLoad(instance, current) {
+      current.$content.append('<div class="modal__close" data-fancybox-close><svg><use xlink:href="images/icons-sprite.svg#icon-cross"></use></svg></div>');
+    }
+  });
+
+  // Маска телефона
+  $('input[type=tel]').mask('+7 999 999 99 99');
 });

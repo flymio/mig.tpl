@@ -1,18 +1,28 @@
 .section-name {
   margin: 0;
-  font: $medium 36px $font;
+  font: $medium 28px $font;
   color: $color-blue;
   text-transform: uppercase;
-  padding-left: 50px;
+  text-align: center;
   position: relative;
+  @media screen and (min-width: 600px) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: 990px) {
+    padding-left: 50px;
+    text-align: left;
+  }
   &:before {
     content: '';
-    display: block;
+    display: none;
     width: 12px;
     height: 26px;
     background: $color-blue;
     position: absolute;
     left: 0;
     top: 8px;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
 }
