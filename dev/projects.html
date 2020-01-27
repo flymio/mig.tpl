@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-heading) -->
+        <section class="page-heading">
+          <div class="page-heading__cover cover">
+            <h1 class="h1 page-heading__title">IT проекты</h1>
+          </div>
+        </section>
+        <!-- End (page-heading) -->
+        <!-- (breadcrumbs) -->
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__cover cover">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span class="breadcrumbs__line">/</span>
+            <span class="breadcrumbs__last">Онкология. Ядерная медицина</span>
+          </div>
+        </section>
+        <!-- End (breadcrumbs) -->
+        <!-- (content-projects) -->
+        <main class="content-projects cover">
+          <div class="content-projects__text">
+            <div class="content-projects__text-img-block">
+              <div class="content-projects__text-img-cover">
+                <div class="content-projects__text-img-wrapper">
+                  <img src="images/content/img-text-1.jpg" alt="Онкология. Ядерная медицина" class="content-projects__text-img">
+                </div>
+              </div>
+            </div>
+            <div class="content-projects__text-cover-description">
+              <div class="content-projects__text-description">
+                <p>Информационная система онкологического мониторинга «ОНКОР» разработана в России и имеет успешный опыт использования с 2016 года. Система предназначена для информатизации онкологической службы региона и позволяет вести сбор, учет и анализ данных о пациенте в течение всего срока его диагностики, лечения и наблюдения. Возможности системы включают организацию обмена информацией между подразделениями онкологической службы, ведение специализированной электронной истории болезни пациента, контроль сроков и полноты обследования пациента, контроль соблюдения стандартов лечения и наблюдения, интеграцию с локальными медицинскими информационными системами, формирование статистических и аналитических отчетов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-projects__goals">
+            <h4 class="h4 content-projects__goals-title">Цели применения:</h4>
+            <ul class="content-projects__goals-list">
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Повышение эффективности работы первичного звена при направлении пациентов в онкологический диспансер
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Обеспечение оперативного получения и анализа данных по онкологической ситуации в регионе, по маршрутизации первичных пациентов
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Мониторинг и управление потоками пациентов при оказании онкологической медицинской помощи населению
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Ведение дополнительных регистров пациентов: онкоурология, онкогематология, детская онкология, паллиативный и предраковый регистры
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Получение инструмента для формирования KPI медицинских организаций при оказании онкологической помощи
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Контроль эффективности выполнения государственных программ в сфере здравоохранения
+              </li>
+              <li class="content-projects__goals-item">
+                <div class="content-projects__goals-item-marker"></div>
+                Формирование механизма мультидисциплинарного контроля для анализа предоставляемых данных медицинскими организациями
+              </li>
+            </ul>
+          </div>
+        </main>
+        <!-- End (content-projects) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/nav.html');
+    @include('./include/modals.html');
+    @include('./include/scripts.html');
+  </body>
+</html>

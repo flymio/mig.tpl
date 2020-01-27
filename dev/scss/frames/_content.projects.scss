@@ -1,0 +1,145 @@
+.content-projects {
+  padding-top: 3px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 990px) {
+    padding-top: 12px;
+    padding-bottom: 70px;
+  }
+  &__text {
+    display: flex;
+    width: 100%;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 990px) {
+      flex-wrap: nowrap;
+      margin-bottom: 37px;
+      padding-bottom: 0;
+    }
+  }
+  &__text-img-block {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0 auto 25px;
+    @media screen and (min-width: 600px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-right: 70px;
+      width: 490px;
+      margin: 0 30px 0 0;
+      padding-right: 70px;
+    }
+  }
+  &__text-img-cover {
+    @media screen and (min-width: 990px) {
+      background: #223359;
+      padding: 50px 0 50px 50px;
+    }
+  }
+  &__text-img-wrapper {
+    @media screen and (min-width: 990px) {
+      margin-right: -70px;
+    }
+  }
+  &__text-img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: 100%;
+  }
+  &__text-cover-description {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 25px;
+    @media screen and (min-width: 990px) {
+      flex: 1 1 auto;
+      width: auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+  &__text-description {
+    width: 100%;
+    p {
+      margin: 0;
+    }
+    ul,
+    ol {
+      margin: 0;
+    }
+    q {
+      margin: 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+      margin: 0;
+    }
+  }
+  &__goals {
+    @media screen and (min-width: 990px) {
+      margin-bottom: 37px;
+    }
+  }
+  &__goals-title {
+    margin: 0 0 40px;
+    color: #223359;
+    font-weight: $bold;
+  }
+  &__goals-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+    max-width: 800px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 28px;
+    }
+  }
+  &__goals-item {
+    position: relative;
+    margin-top: 23px;
+    padding-left: 20px;
+    @media screen and (min-width: 990px) {
+      padding-left: 50px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__goals-item-marker {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media screen and (min-width: 990px) {
+      width: 17px;
+      padding: 4px 0 7px;
+      height: 100%;
+      border-radius: 0;
+      top: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #223359;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.breadcrumbs {
+  &__cover {
+    padding-top: 28px;
+    padding-bottom: 18px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-black;
+  }
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px 10px 0;
+    color: $color-black;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      color: $color-light;
+    }
+  }
+  &__line,
+  &__last {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px 10px 0;
+  }
+  &__last {
+    margin-right: 0;
+  }
+}
