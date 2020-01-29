@@ -1,0 +1,8 @@
+.content-diagnostics {
+  padding-bottom: 80px;
+  padding-top: 25px;
+  @media screen and (min-width: 990px) {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+}

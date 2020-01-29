@@ -120,4 +120,100 @@ $(function () {
 
   // Маска телефона
   $('input[type=tel]').mask('+7 999 999 99 99');
+
+  // Карусель видео
+  $('#video-names').slick({
+    fade: true,
+    adaptiveHeight: true,
+    appendArrows: '#video-arrows',
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    asNavFor: '#video-carousel',
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          
+        }
+      }
+    ]
+  });
+
+  $('#video-carousel')
+    .slick({
+      arrows: false,
+      dots: false,
+      swipe: false,
+      asNavFor: '#video-names',
+      focusOnSelect: false,
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            swipe: true,
+            variableWidth: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            variableWidth: false,
+            centerMode: true,
+            centerPadding: '30px',
+            swipe: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            variableWidth: false,
+            centerMode: true,
+            centerPadding: '20px',
+            swipe: true
+          }
+        }
+      ]
+    })
+    .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      var containerVideo = $('#video-carousel .video.play');
+      
+      if (containerVideo.length) {
+        var video = $(containerVideo[0]).find('video');
+        if (!video[0].paused && !video[0].ended) {
+          video[0].pause();
+          containerVideo.removeClass('play');
+        }
+      }
+    })
+    .on('afterChange', function(event, slick, currentSlide){
+      var targetsWrapper = $('#video-carousel .video__wrapper');
+
+      targetsWrapper.unbind('click');
+      targetsWrapper.on('click', function() {
+        videoControl($(this));
+      });
+    });
+
+  // Воспроизведение видео
+  function videoControl(currentElement) {
+    var wrapper = currentElement;
+    var containerVideo = wrapper.closest('.video');
+    var video = containerVideo.find('video');
+
+    if (video.length) {
+      if (!video[0].paused && !video[0].ended) {
+        video[0].pause();
+        containerVideo.removeClass('play');
+      } else {
+        video[0].play();
+        containerVideo.addClass('play');
+      }
+    }
+  }
+
+  $('.video__wrapper').on('click', function() {
+    videoControl($(this));
+  });
 });

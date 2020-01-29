@@ -1,0 +1,75 @@
+.description {
+  &__cover {
+    padding-top: 66px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media screen and (min-width: 990px) {
+      padding-top: 55px;
+      padding-bottom: 55px;
+      flex-wrap: nowrap;
+    }
+  }
+  &__img-wrapper {
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 40px;
+    @media screen and (min-width: 600px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 990px) {
+      margin: 0 0 0 40px;
+      order: 2;
+      width: 470px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 510px;
+      padding-right: 40px;
+      padding-bottom: 45px;
+      margin-left: 50px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    z-index: 2;
+  }
+  &__img-block-blur {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      background: rgba(11, 30, 73, 0.1);
+      backdrop-filter: blur(10px);
+    }
+  }
+  &__text {
+    flex: 0 0 auto;
+    width: 100%;
+    @media screen and (min-width: 990px) {
+      flex: 1 1 auto;
+      width: auto;
+    }
+  }
+  &__button-block {
+    @media screen and (min-width: 990px) {
+      padding-top: 40px;
+    }
+  }
+}

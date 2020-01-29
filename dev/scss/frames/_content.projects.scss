@@ -1,5 +1,5 @@
 .content-projects {
-  padding-top: 3px;
+  padding-top: 35px;
   padding-bottom: 40px;
   @media screen and (min-width: 990px) {
     padding-top: 12px;
@@ -19,7 +19,7 @@
   &__text-img-block {
     flex: 0 0 auto;
     width: 100%;
-    margin: 0 auto 25px;
+    margin: 0 auto 40px;
     @media screen and (min-width: 600px) {
       width: 450px;
     }
