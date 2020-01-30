@@ -1,0 +1,60 @@
+.directions {
+  background: $color-gray;
+  &__cover {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    @media screen and (min-width: 990px) {
+      padding-top: 37px;
+      padding-bottom: 0;
+    }
+  }
+  &__heading {
+    margin: 0 0 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    @media screen and (min-width: 600px) {
+      margin: 0 -20px;
+    }
+  }
+  &__item {
+    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 43px;
+    @media screen and (min-width: 600px) {
+      padding: 0 20px 43px;
+      width: (100% / 2);
+    }
+    @media screen and (min-width: 990px) {
+      width: (100% / 4);
+    }
+  }
+  &__item-img-block {
+    position: relative;
+    height: 73px;
+    margin: 0 0 17px;
+  }
+  &__item-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__item-description {
+    max-width: 210px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-blue;
+  }
+}

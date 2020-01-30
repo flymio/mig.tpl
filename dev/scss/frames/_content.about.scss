@@ -1,0 +1,7 @@
+.content-about {
+  padding-bottom: 50px;
+  padding-top: 25px;
+  @media screen and (min-width: 990px) {
+    padding-top: 0;
+  }
+}

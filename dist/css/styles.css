@@ -2040,6 +2040,211 @@ input::-ms-clear {
 .video-content__arrows .slick-next {
   margin-left: 35px
 }
+.content-about {
+  padding-bottom: 50px;
+  padding-top: 25px
+}
+.gallery {
+  padding-bottom: 53px
+}
+.gallery__content {
+  position: relative;
+  margin-right: -15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+.gallery__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 50%;
+  padding: 0 15px 15px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex
+}
+.gallery__item_big {
+  width: 100%
+}
+.gallery__description {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  color: #223359;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 25px
+}
+.gallery__text {
+  margin: 0
+}
+.gallery__item-img-block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden
+}
+.gallery__item-img {
+  max-width: none;
+  width: 100%
+}
+.directions {
+  background: #f4f4f4
+}
+.directions__cover {
+  padding-top: 60px;
+  padding-bottom: 20px
+}
+.directions__heading {
+  margin: 0 0 50px
+}
+.directions__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0
+}
+.directions__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 43px
+}
+.directions__item-img-block {
+  position: relative;
+  height: 73px;
+  margin: 0 0 17px
+}
+.directions__item-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%
+}
+.directions__item-description {
+  max-width: 210px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 28px;
+  color: #091c47
+}
+.strategic-partners__cover {
+  padding-top: 60px
+}
+.strategic-partners__description {
+  margin: 0 0 40px
+}
+.strategic-partners__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -30px
+}
+.strategic-partners__item {
+  padding: 0 30px 30px
+}
+.statistics__cover {
+  padding-top: 30px;
+  padding-bottom: 60px
+}
+.statistics__heading {
+  margin: 0 0 30px
+}
+.statistics__list {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.statistics__list-item {
+  padding-left: 30px;
+  position: relative;
+  margin-top: 17px
+}
+.statistics__list-item:first-child {
+  margin-top: 0
+}
+.statistics__list-item:before {
+  content: "";
+  display: block;
+  border-left: 3px solid #091c47;
+  border-bottom: 3px solid #091c47;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 5px
+}
+.prospects {
+  background: #f4f4f4
+}
+.prospects__cover {
+  padding-top: 60px;
+  padding-bottom: 35px
+}
+.prospects__heading {
+  margin: 0 0 30px
+}
+.prospects__bars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  position: relative;
+  margin: 0;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+.prospects__bar {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  padding: 0 0 30px 0;
+  width: 100%
+}
 @media screen and (min-width:480px) {
   .btn {
     min-width: 220px;
@@ -2207,6 +2412,48 @@ input::-ms-clear {
   .video-content__right-bar {
     padding: 0 15px
   }
+  .gallery {
+    padding-bottom: 48px
+  }
+  .gallery__content {
+    margin-right: -20px
+  }
+  .gallery__item {
+    padding-right: 20px;
+    padding-bottom: 20px
+  }
+  .gallery__description {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px
+  }
+  .directions__list {
+    margin: 0 -20px
+  }
+  .directions__item {
+    padding: 0 20px 43px;
+    width: 50%
+  }
+  .strategic-partners__description {
+    font-size: 20px;
+    line-height: 27px
+  }
+  .statistics__list-item {
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 50px
+  }
+  .statistics__list-item:before {
+    width: 23px;
+    height: 12px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    top: 6px
+  }
+  .prospects__bar {
+    font-size: 24px;
+    line-height: 34px
+  }
 }
 @media screen and (min-width:768px) {
   .modal {
@@ -2237,6 +2484,12 @@ input::-ms-clear {
     padding-right: 30px;
     width: 33.3333333333%;
     padding-bottom: 30px
+  }
+  .gallery__item {
+    width: 25%
+  }
+  .gallery__item_big {
+    width: 100%
   }
 }
 @media screen and (min-width:990px) {
@@ -2675,6 +2928,55 @@ input::-ms-clear {
   .video-content__left-bar {
     display: block
   }
+  .content-about {
+    padding-top: 0
+  }
+  .gallery {
+    padding-bottom: 58px
+  }
+  .gallery__description {
+    margin-bottom: 15px
+  }
+  .directions__cover {
+    padding-top: 37px;
+    padding-bottom: 0
+  }
+  .directions__item {
+    width: 25%
+  }
+  .strategic-partners__cover {
+    padding-top: 50px;
+    padding-bottom: 10px
+  }
+  .strategic-partners__description {
+    margin-bottom: 45px
+  }
+  .strategic-partners__list {
+    margin: 0 -50px
+  }
+  .strategic-partners__item {
+    padding: 0 50px 40px
+  }
+  .statistics__cover {
+    padding-bottom: 80px
+  }
+  .statistics__heading {
+    margin-bottom: 24px
+  }
+  .prospects__cover {
+    padding-top: 28px;
+    padding-bottom: 0
+  }
+  .prospects__heading {
+    margin-bottom: 45px
+  }
+  .prospects__bars {
+    margin-right: -40px
+  }
+  .prospects__bar {
+    width: 50%;
+    padding-right: 40px
+  }
 }
 @media screen and (min-width:1200px) {
   .cover {
@@ -2766,6 +3068,35 @@ input::-ms-clear {
   }
   .video-content__arrows {
     max-width: 270px
+  }
+  .gallery__content {
+    margin-right: -30px
+  }
+  .gallery__item {
+    width: 33.3333333333%;
+    padding-right: 30px
+  }
+  .gallery__item_big {
+    width: 66.6666666667%
+  }
+  .gallery__description {
+    min-height: 240px;
+    padding: 50px;
+    background: #f4f4f4;
+    margin-bottom: 0
+  }
+  .gallery__item-img-block {
+    min-height: 240px
+  }
+  .gallery__item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: auto
   }
 }
 @media screen and (min-width:1470px) {
