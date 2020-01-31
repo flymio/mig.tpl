@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-heading) -->
+        <section class="page-heading">
+          <div class="page-heading__cover cover">
+            <h1 class="h1 page-heading__title">Партнерство</h1>
+          </div>
+        </section>
+        <!-- End (page-heading) -->
+        <!-- (breadcrumbs) -->
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__cover cover">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span class="breadcrumbs__line">/</span>
+            <span class="breadcrumbs__last">Партнерство</span>
+          </div>
+        </section>
+        <!-- End (breadcrumbs) -->
+        <!-- (partnership) -->
+        <main class="partnership">
+          <div class="partnership__item">
+            <div class="partnership__item-cover cover">
+              <div class="partnership__item-img-block">
+                <img src="images/content/icon-partnership-1.svg" alt="Государство" class="partnership__item-img">
+              </div>
+              <div class="partnership__item-content">
+                <h5 class="partnership__item-title">Государство</h5>
+                <p class="partnership__item-text">Тесное сотрудничество с государственными органами. 11 соглашений о сотрудничестве подписано с регионами РФ 20 проектов находятся на стадии реализации, в том числе ГЧП Реализовано крупнейшее концессионнное соглашение с Московской областью Подписано соглашение о сотрудничестве с республикой Казахстан Подписано соглашение о сотрудничестве с республикой Узбекистан</p>
+              </div>
+            </div>
+          </div>
+          <div class="partnership__item">
+            <div class="partnership__item-cover cover">
+              <div class="partnership__item-img-block">
+                <img src="images/content/icon-partnership-2.svg" alt="Технологии" class="partnership__item-img">
+              </div>
+              <div class="partnership__item-content">
+                <h5 class="partnership__item-title">Технологии</h5>
+                <p class="partnership__item-text">Реализация совместных проектов с ходином Швабе, дочерней компанией Госкорпорациии Ростех по созданию мобильных ПЭТ-центров реализация совестных проектов с группой "Роснано" создравние совместных проектов в Русатом хелскеа</p>
+              </div>
+            </div>
+          </div>
+          <div class="partnership__item">
+            <div class="partnership__item-cover cover">
+              <div class="partnership__item-img-block">
+                <img src="images/content/icon-partnership-3.svg" alt="Финансы" class="partnership__item-img">
+              </div>
+              <div class="partnership__item-content">
+                <h5 class="partnership__item-title">Финансы</h5>
+                <p class="partnership__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor ipsum id leo pretium arcu vel. Lectus a mauris ante tempor eu, neque quis ut. Et massa tincidunt dignissim egestas dignissim leo ut at. Ac vivamus est ac eu. Nibh proin tortor egestas viverra nunc.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- End (partnership) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/nav.html');
+    @include('./include/modals.html');
+    @include('./include/scripts.html');
+  </body>
+</html>

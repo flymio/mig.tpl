@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-heading) -->
+        <section class="page-heading">
+          <div class="page-heading__cover cover">
+            <h1 class="h1 page-heading__title">Образовательные проекты</h1>
+          </div>
+        </section>
+        <!-- End (page-heading) -->
+        <!-- (breadcrumbs) -->
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__cover cover">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span class="breadcrumbs__line">/</span>
+            <span class="breadcrumbs__last">Образовательные проекты</span>
+          </div>
+        </section>
+        <!-- End (breadcrumbs) -->
+        <!-- (content-education) -->
+        <main class="content-education">
+          <div class="cover">
+            <h2 class="content-education__title">ГК МедИнвестГрупп запустила федеральный проект по подготовке кадров</h2>
+          </div>
+          <section class="kinds">
+            <div class="kinds__cover cover">
+              <div class="kinds__list">
+                <div class="kinds__item">
+                  <div class="kinds__item-img-block">
+                    <img src="images/content/icon-kinds-1.svg" alt="Стажировки" class="kinds__item-img">
+                  </div>
+                  <p class="kinds__item-text">Стажировки</p>
+                </div>
+                <div class="kinds__item">
+                  <div class="kinds__item-img-block">
+                    <img src="images/content/icon-kinds-2.svg" alt="Профессиональная переподготовка" class="kinds__item-img">
+                  </div>
+                  <p class="kinds__item-text">Профессиональная переподготовка</p>
+                </div>
+                <div class="kinds__item">
+                  <div class="kinds__item-img-block">
+                    <img src="images/content/icon-kinds-3.svg" alt="Сотрудничество с ВУЗами" class="kinds__item-img">
+                  </div>
+                  <p class="kinds__item-text">Сотрудничество с ВУЗами</p>
+                </div>
+                <div class="kinds__item">
+                  <div class="kinds__item-img-block">
+                    <img src="images/content/icon-kinds-4.svg" alt="Вакансии в УК" class="kinds__item-img">
+                  </div>
+                  <p class="kinds__item-text">Вакансии в УК</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="content-education__text cover">
+            <div class="text">
+              <h3><strong>Миссия проекта – обеспечение отрасли здравоохранения квалифицированными специалистами, оказание качественной и доступной медицинской помощи на территории России.</strong></h3>
+              <p>На сегодняшний день в проектах группы уже задействовано 1000 медицинских специалистов различных направлений, в частности, 500 врачей по профилю онкология. Одно из направлений программы - профессиональная переподготовка по направлениям «Онкология» и «Радиотерапия». Курсы профессиональной переподготовки будут организованы совместно с кафедрами медицинских ВУЗов, осуществляющих подготовку специалистов данного профиля.</p>
+              <p>Пройти обучение на бесплатной основе смогут врачи, закончившие интернатуру/ординатуру по специальностям: «терапия», «акушерство и гинекология», «хирургия».</p>
+              <p>Для студентов/ординаторов медцинских ВУЗов возможно прохождение стажировки на базе действующих центров федеральной сети «ПЭТ-Технолоджи». Также на сегодняшний день разврабатывается образовательная программа "Медцинская физика" в магистратуре МФТИ.</p>
+            </div>
+          </div>
+        </main>
+        <!-- End (content-education) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/nav.html');
+    @include('./include/modals.html');
+    @include('./include/scripts.html');
+  </body>
+</html>

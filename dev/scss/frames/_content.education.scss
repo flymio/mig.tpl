@@ -1,0 +1,23 @@
+.content-education {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 990px) {
+    padding-top: 5px;
+    padding-bottom: 80px;
+  }
+  &__title {
+    font: $medium 28px $font;
+    color: #223359;
+    margin: 0 0 40px;
+    @media screen and (min-width: 600px) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    @media screen and (min-width: 990px) {
+      margin-bottom: 35px;
+    }
+  }
+  &__text {
+    padding-top: 42px;
+  }
+}
