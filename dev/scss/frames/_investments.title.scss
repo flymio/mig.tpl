@@ -1,0 +1,12 @@
+.investments-title {
+  &__cover {
+    padding-bottom: 50px;
+  }
+  &__text {
+    margin: 0;
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      text-align: left;
+    }
+  }
+}

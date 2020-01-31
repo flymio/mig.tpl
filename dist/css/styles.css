@@ -2120,10 +2120,6 @@ input::-ms-clear {
   display: -webkit-flex;
   display: -moz-box;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
-  justify-content: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
@@ -2245,6 +2241,319 @@ input::-ms-clear {
   padding: 0 0 30px 0;
   width: 100%
 }
+.content-investments {
+  padding-top: 20px
+}
+.investments-title__cover {
+  padding-bottom: 50px
+}
+.investments-title__text {
+  margin: 0;
+  text-align: center
+}
+.sum__cover {
+  padding-bottom: 32px
+}
+.sum__heading {
+  margin: 0 0 42px
+}
+.sum__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin-right: -20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center
+}
+.sum__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 100%
+}
+.sum__content {
+  text-align: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid #f4f4f4;
+  padding: 25px 10px 30px;
+  width: 100%
+}
+.sum__year {
+  color: #091c47;
+  font-size: 22px;
+  line-height: normal;
+  margin-bottom: 5px
+}
+.sum__number {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #091c47
+}
+.investment-direction__cover {
+  padding-bottom: 25px
+}
+.investment-direction__title {
+  font: 500 26px Roboto,sans-serif;
+  color: #091c47;
+  margin: 0 0 50px;
+  text-align: center
+}
+.investment-direction__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center
+}
+.investment-direction__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 43px
+}
+.investment-direction__item-img-block {
+  position: relative;
+  height: 73px;
+  margin: 0 0 40px
+}
+.investment-direction__item-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%
+}
+.investment-direction__item-description {
+  max-width: 210px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000
+}
+.countries {
+  background: #f4f4f4;
+  overflow: hidden
+}
+.countries__cover {
+  padding-top: 60px;
+  padding-bottom: 22px
+}
+.countries__bg-icon {
+  width: 385px;
+  height: 405px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -160px;
+  fill: #eaeaea;
+  display: none
+}
+.countries__content {
+  position: relative;
+  z-index: 2
+}
+.countries__heading {
+  margin-bottom: 40px
+}
+.countries__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  position: relative;
+  margin: 0 -25px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center
+}
+.countries__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  padding: 0 25px 43px;
+  width: 100%;
+  text-align: center
+}
+.countries__item-img-block {
+  height: 61px;
+  position: relative
+}
+.countries__item-img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: 2px 4px 7px rgba(0,0,0,.2)
+}
+.countries__item-name {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  color: #000;
+  margin-top: 21px
+}
+.future-goals {
+  background: #091c47 url(../images/bg-future-goals.jpg) center center no-repeat;
+  background-size: cover
+}
+.future-goals__cover {
+  padding-top: 60px;
+  padding-bottom: 60px
+}
+.future-goals__title {
+  color: #fff;
+  margin: 0 0 30px;
+  font: 700 28px Roboto,sans-serif;
+  text-transform: uppercase;
+  text-align: center
+}
+.future-goals__bars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative
+}
+.future-goals__bar {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  color: #fff;
+  text-align: center
+}
+.centers {
+  background: #f4f4f4
+}
+.centers__cover {
+  padding-top: 60px;
+  padding-bottom: 35px
+}
+.centers__heading {
+  margin: 0 0 30px
+}
+.centers__description {
+  margin: 0 0 3px;
+  text-align: left
+}
+.centers__bars {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative
+}
+.centers__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  flex: 0 0 auto;
+  padding: 30px 0;
+  width: 100%
+}
+.centers__item-name {
+  font: 700 21px Roboto,sans-serif;
+  color: #091c47;
+  margin: 0 0 25px
+}
+.centers__list {
+  list-style: none;
+  padding: 2px 0 7px 15px;
+  margin: 0;
+  border-left: 2px solid #7e889d
+}
+.centers__list-item {
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 19px
+}
+.centers__list-item:first-child {
+  margin-top: 0
+}
+.investments-statistics__cover {
+  padding-top: 60px;
+  padding-bottom: 14px
+}
+.investments-statistics__section {
+  padding-bottom: 46px
+}
+.investments-statistics__title {
+  font: 700 26px Roboto,sans-serif;
+  margin: 0
+}
+.investments-statistics__list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0
+}
+.investments-statistics__list-item {
+  padding-left: 30px;
+  position: relative;
+  margin-top: 17px
+}
+.investments-statistics__list-item:first-child {
+  margin-top: 0
+}
+.investments-statistics__list-item:before {
+  content: "";
+  display: block;
+  border-left: 3px solid #091c47;
+  border-bottom: 3px solid #091c47;
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 5px
+}
 @media screen and (min-width:480px) {
   .btn {
     min-width: 220px;
@@ -2311,6 +2620,12 @@ input::-ms-clear {
   }
   .map__count-description {
     padding-left: 20px
+  }
+  .sum__item {
+    width: 50%
+  }
+  .countries__item {
+    width: 33.3333333333%
   }
 }
 @media screen and (min-width:600px) {
@@ -2454,6 +2769,54 @@ input::-ms-clear {
     font-size: 24px;
     line-height: 34px
   }
+  .investment-direction__title {
+    font-size: 30px
+  }
+  .investment-direction__list {
+    margin: 0 -20px
+  }
+  .investment-direction__item {
+    padding: 0 20px 43px;
+    width: 50%
+  }
+  .countries__item-name {
+    font-size: 20px
+  }
+  .future-goals__title {
+    font-size: 36px
+  }
+  .future-goals__bar {
+    font-size: 25px;
+    line-height: 38px
+  }
+  .centers__description {
+    font-size: 24px;
+    line-height: 34px
+  }
+  .centers__bars {
+    margin-right: -15px;
+    margin-left: -15px
+  }
+  .centers__item {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%
+  }
+  .investments-statistics__title {
+    font-size: 34px
+  }
+  .investments-statistics__list-item {
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 50px
+  }
+  .investments-statistics__list-item:before {
+    width: 23px;
+    height: 12px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    top: 6px
+  }
 }
 @media screen and (min-width:768px) {
   .modal {
@@ -2490,6 +2853,9 @@ input::-ms-clear {
   }
   .gallery__item_big {
     width: 100%
+  }
+  .sum__item {
+    width: 33.3333333333%
   }
 }
 @media screen and (min-width:990px) {
@@ -2977,6 +3343,96 @@ input::-ms-clear {
     width: 50%;
     padding-right: 40px
   }
+  .investments-title__text {
+    text-align: left
+  }
+  .sum__cover {
+    padding-bottom: 17px
+  }
+  .sum__list {
+    margin-right: -30px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    justify-content: flex-start
+  }
+  .sum__item {
+    padding-right: 30px;
+    padding-bottom: 30px
+  }
+  .sum__year {
+    font-size: 25px
+  }
+  .sum__number {
+    font-size: 32px;
+    line-height: 32px
+  }
+  .investment-direction__title {
+    margin-bottom: 75px;
+    text-align: left
+  }
+  .investment-direction__list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    justify-content: flex-start
+  }
+  .investment-direction__item {
+    width: 25%
+  }
+  .countries__cover {
+    padding-top: 38px;
+    padding-bottom: 17px
+  }
+  .countries__heading {
+    margin-bottom: 55px
+  }
+  .countries__list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    justify-content: flex-start
+  }
+  .countries__item {
+    width: 25%
+  }
+  .future-goals__cover {
+    padding-top: 40px;
+    padding-bottom: 75px
+  }
+  .future-goals__title {
+    margin-bottom: 60px
+  }
+  .future-goals__bars {
+    margin-right: -100px
+  }
+  .future-goals__bar {
+    width: 50%;
+    padding-right: 100px;
+    text-align: left
+  }
+  .centers__cover {
+    text-align: left;
+    padding-bottom: 0;
+    padding-top: 40px
+  }
+  .centers__heading {
+    margin-bottom: 37px
+  }
+  .centers__bars {
+    margin-right: -30px;
+    margin-left: 0
+  }
+  .centers__item {
+    width: 33.3333333333%;
+    padding: 50px 30px 50px 0
+  }
+  .investments-statistics__cover {
+    padding-top: 32px
+  }
+  .investments-statistics__list {
+    margin-bottom: 15px
+  }
 }
 @media screen and (min-width:1200px) {
   .cover {
@@ -3097,6 +3553,34 @@ input::-ms-clear {
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     width: auto
+  }
+  .countries__cover {
+    padding-bottom: 5px
+  }
+  .countries__bg-icon {
+    display: block
+  }
+  .countries__items {
+    padding: 0 145px
+  }
+  .countries__list {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+    margin: 0 -55px
+  }
+  .countries__item {
+    padding: 0 55px 55px
+  }
+  .centers__bars {
+    margin-right: -50px
+  }
+  .centers__item {
+    padding-right: 50px
+  }
+  .centers__item-name {
+    font-size: 24px
   }
 }
 @media screen and (min-width:1470px) {

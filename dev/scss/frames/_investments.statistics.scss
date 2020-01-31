@@ -1,0 +1,59 @@
+.investments-statistics {
+  &__cover {
+    padding-top: 60px;
+    padding-bottom: 14px;
+    @media screen and (min-width: 990px) {
+      padding-top: 32px;
+    }
+  }
+  &__section {
+    padding-bottom: 46px;
+  }
+  &__title {
+    font: $bold 26px $font;
+    margin: 0;
+    @media screen and (min-width: 600px) {
+      font-size: 34px;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__list-item {
+    padding-left: 30px;
+    position: relative;
+    margin-top: 17px;
+    @media screen and (min-width: 600px) {
+      font-size: 24px;
+      line-height: 28px;
+      padding-left: 50px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      border-left: 3px solid $color-blue;
+      border-bottom: 3px solid $color-blue;
+      transform: rotate(-50deg);
+      width: 15px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      @media screen and (min-width: 600px) {
+        width: 23px;
+        height: 12px;
+        border-left-width: 5px;
+        border-bottom-width: 5px;
+        top: 6px;
+      }
+    }
+  }
+}

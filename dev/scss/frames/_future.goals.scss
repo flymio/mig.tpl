@@ -1,0 +1,48 @@
+.future-goals {
+  background: $color-blue url(../images/bg-future-goals.jpg) center center no-repeat;
+  background-size: cover;
+  &__cover {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 990px) {
+      padding-top: 40px;
+      padding-bottom: 75px;
+    }
+  }
+  &__title {
+    color: $color-white;
+    margin: 0 0 30px;
+    font: $bold 28px $font;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      font-size: 36px;
+    }
+    @media screen and (min-width: 990px) {
+      margin-bottom: 60px;
+    }
+  }
+  &__bars {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    @media screen and (min-width: 990px) {
+      margin-right: -100px;
+    }
+  }
+  &__bar {
+    flex: 0 0 auto;
+    width: 100%;
+    color: $color-white;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      font-size: 25px;
+      line-height: 38px;
+    }
+    @media screen and (min-width: 990px) {
+      width: 50%;
+      padding-right: 100px;
+      text-align: left;
+    }
+  }
+}

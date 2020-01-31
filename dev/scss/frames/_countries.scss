@@ -1,0 +1,99 @@
+.countries {
+  background: $color-gray;
+  overflow: hidden;
+  &__cover {
+    padding-top: 60px;
+    padding-bottom: 22px;
+    @media screen and (min-width: 990px) {
+      padding-top: 38px;
+      padding-bottom: 17px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 5px;
+    }
+  }
+  &__bg-icon {
+    width: 385px;
+    height: 405px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -160px;
+    fill: #EAEAEA;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+  &__heading {
+    margin-bottom: 40px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 55px;
+    }
+  }
+  &__items {
+    @media screen and (min-width: 1200px) {
+      padding: 0 145px;
+    }
+  }
+  &__list {
+    display: flex;
+    position: relative;
+    margin: 0 -25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 990px) {
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-end;
+      margin: 0 -55px;
+    }
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding: 0 25px 43px;
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 480px) {
+      width: (100% / 3);
+    }
+    @media screen and (min-width: 990px) {
+      width: (100% / 4);
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 55px 55px;
+    }
+  }
+  &__item-img-block {
+    height: 61px;
+    position: relative;
+  }
+  &__item-img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.2);
+  }
+  &__item-name {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: $medium;
+    color: $color-black;
+    margin-top: 21px;
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}

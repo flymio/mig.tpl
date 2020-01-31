@@ -1,23 +1,31 @@
-.directions {
-  background: $color-gray;
+.investment-direction {
   &__cover {
-    padding-top: 60px;
-    padding-bottom: 20px;
-    @media screen and (min-width: 990px) {
-      padding-top: 37px;
-      padding-bottom: 0;
-    }
+    padding-bottom: 25px;
   }
-  &__heading {
+  &__title {
+    font: $medium 26px $font;
+    color: $color-blue;
     margin: 0 0 50px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 990px) {
+      margin-bottom: 75px;
+      text-align: left;
+    }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     margin: 0;
+    justify-content: center;
     @media screen and (min-width: 600px) {
       margin: 0 -20px;
+    }
+    @media screen and (min-width: 990px) {
+      justify-content: flex-start;
     }
   }
   &__item {
@@ -36,7 +44,7 @@
   &__item-img-block {
     position: relative;
     height: 73px;
-    margin: 0 0 17px;
+    margin: 0 0 40px;
   }
   &__item-img {
     display: block;
@@ -52,8 +60,8 @@
   &__item-description {
     max-width: 210px;
     margin: 0 auto;
-    font-size: 24px;
-    line-height: 28px;
-    color: $color-blue;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-black;
   }
 }
