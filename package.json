@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "jquery.formstyler": "^1.7.5-repackage",
     "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",

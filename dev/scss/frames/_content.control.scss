@@ -1,0 +1,6 @@
+.content-control {
+  padding-top: 30px;
+  @media screen and (min-width: 990px) {
+    padding-top: 0;
+  }
+}

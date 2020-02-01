@@ -153,3 +153,102 @@ input::-ms-clear {
 .fancybox-is-open .fancybox-bg {
   opacity: 1;
 }
+select {
+  display: none;
+}
+.jq-selectbox {
+	display: block!important;
+  cursor: pointer;
+  select {
+    display: block;
+  }
+}
+.jq-selectbox__select {
+	height: 60px;
+	padding: 0 62px 0 17px;
+	border: 1px solid #ECEFEF;
+	background: $color-white;
+	font: $regular 16px $font;
+  color: $color-blue;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+  }
+}
+.jq-selectbox.disabled .jq-selectbox__select {
+	color: #DFDFDF;
+}
+.jq-selectbox__select-text {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 19px;
+  @media screen and (min-width: 600px) {
+    padding-top: 18px;
+  }
+}
+.jq-selectbox .placeholder {
+	color: #DFDFDF;
+}
+.jq-selectbox__trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 62px;
+	height: 100%;
+}
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 22px;
+	right: 24px;
+	width: 10px;
+	height: 10px;
+  border-right: 3px solid $color-blue;
+  border-bottom: 3px solid $color-blue;
+  transform: rotate(45deg);
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+	border-color: #DFDFDF;
+}
+.jq-selectbox__dropdown {
+	width: 100%!important;
+	margin: -1px 0;
+	padding: 0;
+	border: 1px solid #ECEFEF;
+	background: $color-white;
+  font: $regular 16px $font;
+  left: 0!important;
+  top: 100%!important;
+  right: auto!important;
+  bottom: auto!important;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+  }
+}
+.jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.jq-selectbox li {
+	padding: 12px 17px;
+	user-select: none;
+	white-space: normal;
+  color: $color-blue;
+  @media screen and (min-width: 600px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.jq-selectbox li.selected {
+	background-color: #ECEFEF;
+}
+.jq-selectbox li:hover {
+	background-color: #ECEFEF;
+}
+.jq-selectbox li.disabled {
+	color: #DFDFDF;
+}
+.jq-selectbox li.disabled:hover {
+	background: none;
+}

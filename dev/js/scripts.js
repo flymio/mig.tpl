@@ -216,4 +216,44 @@ $(function () {
   $('.video__wrapper').on('click', function() {
     videoControl($(this));
   });
+
+  // Стилизация селекта
+  $('select').styler();
+
+  // Карусель новостей на странице детальной новости
+  $('#carousel').slick({
+    dots: false,
+    arrows: true,
+    appendArrows: '#carousel-arrows',
+    appendDots: '#carousel-dots',
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    swipe: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
+  });
 });
