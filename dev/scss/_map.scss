@@ -1,0 +1,59 @@
+.map {
+  height: 200px;
+  @media screen and (min-width: 600px) {
+    height: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 990px) {
+    height: 645px;
+  }
+  .map-popup + & {
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+  }
+  .map-region{
+    fill: #C7D6ED; 
+    opacity: 0.8;   
+  }
+  .active {
+    fill: #223359;
+    opacity: 0.9;
+  }
+  .selected {
+    fill: #000;
+    opacity: 1;
+  }
+  .map-tooltip{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    color: #fff;
+    background-color: #272c31;
+    width: 230px;
+    font-size: 14px;
+    padding: 15px 25px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: #272c31;
+      width: 10px;
+      height: 10px;
+      top: calc( 50% - 5px );
+      left: -5px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.show{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

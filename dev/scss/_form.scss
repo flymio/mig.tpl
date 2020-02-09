@@ -5,6 +5,16 @@
       margin-top: 0;
     }
   }
+  &__message {
+    margin-top: 50px;
+  }
+  &__icon {
+    margin:0 auto;
+    &__svg {
+      margin: 0 auto;
+      width: 61px;
+    }
+  }
   &__label {
     margin: 0 0 12px;
     font-size: 16px;

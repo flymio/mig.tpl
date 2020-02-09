@@ -1,4 +1,18 @@
 'use strict';
+let last_map = false;
+
+function getToltip(event, region) {
+  $('.map-tooltip').addClass('show').css({
+    top: event.offsetY + 20,
+    left: event.offsetX + 40
+  });
+
+  if (region) {
+    $('.map-tooltip').text(region);
+  } else {
+    $('.map-tooltip').removeClass('show');
+  }
+}
 
 $(function () {
   // Поддержка svg спрайтов в IE11
@@ -20,6 +34,30 @@ $(function () {
       }
     ]
   });
+
+  $('.map-region').on('mouseover mousemove', function(e){
+    var id = $(this)[0].id;
+    var title = $(this).attr("title");
+    if(!$('.map-details').hasClass('show')){
+      getToltip(e, title);
+    }
+  });
+
+  $('.map-region').hover(function(e){
+    $(this).addClass("active");
+  }, function(e){
+    $(this).removeClass("active");
+    getToltip(e, '');
+  }).on('click', function(){
+    if (last_map){
+      $(last_map).removeClass("selected");
+    }
+    $(this).addClass('selected');
+    $(".city_choose").removeClass("g-hidden");
+    last_map = this;
+    $("[name=map_id]").val($(this).attr("id"));
+  });
+
 
   // Карусель новостей
   $('#news-names').slick({

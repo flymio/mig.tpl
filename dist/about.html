@@ -16,10 +16,10 @@
     <link rel="apple-touch-icon" href="#">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,500,700&display=swap&subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css?t=1580562277631">
-    <link rel="stylesheet" href="css/slick.css?t=1580562277631">
-    <link rel="stylesheet" href="css/fancybox.css?t=1580562277631">
-    <link rel="stylesheet" href="css/styles.css?t=1580562277631">
+    <link rel="stylesheet" href="css/normalize.css?t=1581273089429">
+    <link rel="stylesheet" href="css/slick.css?t=1581273089429">
+    <link rel="stylesheet" href="css/fancybox.css?t=1581273089429">
+    <link rel="stylesheet" href="css/styles.css?t=1581273089429">
   </head>
   <body>
     <!-- (wrapper) -->
@@ -54,7 +54,7 @@
               <div class="header__contacts">
                 <!-- (call) -->
                 <div class="call header__call">
-                  <a href="javascript:;" data-fancybox data-src="#call" class="call__link">
+                  <a href="javascript:;" data-fancybox data-src="#call_ok" class="call__link">
                     <svg class="call__icon">
                       <use xlink:href="images/icons-sprite.svg#icon-mail"></use>
                     </svg>
@@ -378,10 +378,10 @@
       <div class="form">
         <form action="#" name="form" method="POST">
           <div class="form__fields">
-            <div class="form__field form__field_success">
+            <div class="form__field">
               <div class="form__label">Имя</div>
               <div class="form__field-wrapper">
-                <input type="text" name="name" value="Дмитрий" placeholder="" class="form__input">
+                <input type="text" name="name" value="" placeholder="" class="form__input">
               </div>
             </div>
             <div class="form__field">
@@ -402,12 +402,24 @@
       </div>
     </div>
     <!-- End (modal) -->
+    <!-- (modal) -->
+    <div class="modal" id="call_ok">
+      <div class="form form__message">
+        <h4 class="modal__title">Анкета успешно отправлена!</h4>
+        <div class="form__icon">
+          <svg class="form__icon__svg" width="61" height="58" viewBox="0 0 61 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 36.5714L21.3333 50L56 3" stroke="#6ED685" stroke-width="10"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End (modal) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/svg4everybody.js?t=1580562277631"></script>
-    <script src="js/slick.js?t=1580562277631"></script>
-    <script src="js/fancybox.js?t=1580562277631"></script>
-    <script src="js/maskedinput.js?t=1580562277631"></script>
-    <script src="js/formstyler.js?t=1580562277631"></script>
-    <script src="js/scripts.js?t=1580562277631"></script>
+    <script src="js/svg4everybody.js?t=1581273089429"></script>
+    <script src="js/slick.js?t=1581273089429"></script>
+    <script src="js/fancybox.js?t=1581273089429"></script>
+    <script src="js/maskedinput.js?t=1581273089429"></script>
+    <script src="js/formstyler.js?t=1581273089429"></script>
+    <script src="js/scripts.js?t=1581273089429"></script>
   </body>
 </html>

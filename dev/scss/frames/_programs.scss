@@ -89,11 +89,9 @@
     flex: 0 0 auto;
     display: flex;
     width: 100%;
-    background: $color-white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
     text-decoration: none;
     font-weight: $medium;
     font-size: 18px;
@@ -101,17 +99,20 @@
     color: #002B3B;
     padding: 10px;
     min-height: 76px;
+    position: relative;
+    &__icon {
+      fill: $color-blue;
+      width: 67px;
+      height: 67px;
+      padding-right: 10px;
+    }
     @media screen and (min-width: 768px) {
       font-size: 17px;
-      line-height: 22px;
+      line-height: 22px;      
     }
     @media screen and (min-width: 990px) {
       font-size: 18px;
       line-height: 26px;
-    }
-    &:hover,
-    &:active {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
   }
 }

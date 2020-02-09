@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx:
+    image: nginx
+    hostname: nginx
+    volumes:
+      - ./nginx:/etc/nginx
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - "8123:80"
