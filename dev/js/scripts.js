@@ -1,5 +1,5 @@
 'use strict';
-let last_map = false;
+var last_map = false;
 
 function getToltip(event, region) {
   $('.map-tooltip').addClass('show').css({
@@ -8,7 +8,7 @@ function getToltip(event, region) {
   });
 
   if (region) {
-    $('.map-tooltip').text(region);
+    $('.map-tooltip').html(region);
   } else {
     $('.map-tooltip').removeClass('show');
   }
@@ -23,8 +23,8 @@ $(function () {
     appendArrows: '#slider-nav',
     appendDots: '#slider-nav',
     dots: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
     responsive: [
       {
         breakpoint: 990,
@@ -35,19 +35,36 @@ $(function () {
     ]
   });
 
+  if (window['regions_count']){
+    $.each(regions_count, function(i,j){
+      if (regions_count[i] && regions_count[i]>0){
+        $("#"+i).addClass("active");
+      }
+    });
+  }
+
   $('.map-region').on('mouseover mousemove', function(e){
     var id = $(this)[0].id;
     var title = $(this).attr("title");
     if(!$('.map-details').hasClass('show')){
-      getToltip(e, title);
+      if (regions_count[id]){
+        title = title + "<br/>Центров: " +regions_count[id];
+    getToltip(e, title);
+      }
     }
   });
 
   $('.map-region').hover(function(e){
-    $(this).addClass("active");
+    var id = $(this)[0].id;
+  if (regions_count[id]){
+      $(this).addClass("active");   
+  }
   }, function(e){
-    $(this).removeClass("active");
+    var id = $(this)[0].id;
+  if (regions_count[id]){
+      //$(this).removeClass("active");
     getToltip(e, '');
+  }
   }).on('click', function(){
     if (last_map){
       $(last_map).removeClass("selected");
@@ -65,8 +82,8 @@ $(function () {
     adaptiveHeight: true,
     appendArrows: '#news-arrows',
     dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
     asNavFor: '#news-carousel',
     swipe: false,
     responsive: [
@@ -152,7 +169,7 @@ $(function () {
     loop: false,
     modal: true,
     afterLoad: function afterLoad(instance, current) {
-      current.$content.append('<div class="modal__close" data-fancybox-close><svg><use xlink:href="images/icons-sprite.svg#icon-cross"></use></svg></div>');
+      current.$content.append('<div class="modal__close" data-fancybox-close><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-cross"></use></svg></div>');
     }
   });
 
@@ -165,8 +182,8 @@ $(function () {
     adaptiveHeight: true,
     appendArrows: '#video-arrows',
     dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
     asNavFor: '#video-carousel',
     swipe: false,
     responsive: [
@@ -264,8 +281,8 @@ $(function () {
     arrows: true,
     appendArrows: '#carousel-arrows',
     appendDots: '#carousel-dots',
-    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="/bitrix/templates/general_mig/images/icons-sprite.svg#icon-angle"></use></svg></button>',
     swipe: true,
     slidesToShow: 4,
     slidesToScroll: 1,

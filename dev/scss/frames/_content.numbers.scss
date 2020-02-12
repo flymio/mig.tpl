@@ -1,0 +1,89 @@
+.numbers {
+  &__cover {
+    padding-bottom: 32px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 17px;
+    }
+  }
+  &__cover-gray {
+    background: $color-gray;
+  }
+  &__cover-left {
+    text-align: left;
+  }
+  &__heading {
+    margin: 0 0 42px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    @media screen and (min-width: 990px) {
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: (100% / 2);
+    }
+    @media screen and (min-width: 768px) {
+      width: (100% / 2);
+    }
+    @media screen and (min-width: 968px) {
+      width: (100% / 4);
+    }
+    @media screen and (min-width: 990px) {
+      padding-top: 30px;
+    }
+  }
+  &__content {
+    text-align: center;
+    flex: 0 0 auto;
+    padding: 25px 5px 30px;
+    width: 100%;
+  }
+  &__year {
+    color: $color-blue;
+    font-size: 22px;
+    line-height: normal;
+    margin-bottom: 5px;
+    @media screen and (min-width: 990px) {
+      font-size: 17px;
+    }
+  }
+  &__text {
+    color: $color-blue;
+    font-size: 22px;
+    line-height: normal;
+    margin-bottom: 5px;
+    text-align: left;
+    @media screen and (min-width: 990px) {
+      font-size: 17px;
+    }
+  }
+  &__number {
+    font-weight: $bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: $color-blue;
+    @media screen and (min-width: 990px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+  &__number-big {
+    font-weight: $bold;
+    font-size: 60px;
+    line-height: 28px;
+    color: $color-blue;
+    @media screen and (min-width: 990px) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+}
